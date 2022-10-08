@@ -1,0 +1,19 @@
+.navbar{
+    /* height: 56px; */
+    height: 48px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--black);
+    color: var(--white);
+    align-items: center;
+    padding: 0 20px;
+}
+.nav-links{
+    display: flex;
+    justify-content: flex-end;
+    
+}
+.links{
+    margin: 0px 20px;
+}
