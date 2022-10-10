@@ -1,8 +1,12 @@
 import './App.css';
 import axios from 'axios'
-import { useEffect, useState } from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css'; import { useEffect, useState } from 'react';
 import Navbar from './components/Header/Navbar';
 import News from './components/News/News';
+import Contact from './components/Footer/Contact'
+import About from './components/Footer/About'
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+// import SignUp from './components/Login/SignUp';
 
 function App() {
   const [newsList, setNewsList] = useState([])
@@ -20,10 +24,15 @@ function App() {
     fetchNews()
   }, [])
   return (
-    <div className="App">
+    <BrowserRouter>
       <Navbar />
-      <News newsList={newsList}/>
-    </div>
+      <Routes>
+        <Route path='/' element={<News newsList={newsList} />} />
+        <Route path='/about' element={<About />} />
+        <Route path='/contact' element={<Contact />} />
+        {/* <Route path='/sign-up' element={<SignUp />} /> */}
+      </Routes>
+    </BrowserRouter>
   );
 }
 

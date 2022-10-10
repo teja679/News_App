@@ -47,7 +47,12 @@ a {
 * {
   box-sizing: border-box;
 }
-
+.contact{
+  margin: 20px;
+}
+.about{
+  margin: 20px;
+}
 
 body {
   margin: 0;

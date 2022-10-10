@@ -1,8 +1,35 @@
 import React from 'react'
 import './styles.css'
+import { Container, Navbar, Nav } from 'react-bootstrap'
+import { NavLink } from 'react-router-dom'
 
-const Navbar = () => {
+const NavbarComp = () => {
   return (
+    <Navbar className='navbar' collapseOnSelect expand="lg" bg="dark" variant="dark">
+      <Container className='container'>
+        <Navbar.Brand>News App</Navbar.Brand>
+        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+        <Navbar.Collapse id="responsive-navbar-nav">
+          <Nav className="nav">
+            <Nav.Link as={NavLink} to='/'>News</Nav.Link>
+            <Nav.Link as={NavLink} to='/about'>About Us</Nav.Link>
+			      <Nav.Link as={NavLink} to='/contact'>Contact Us</Nav.Link>
+          </Nav>
+          {/* <Nav>
+            <Nav.Link as={NavLink} to='/sign-up'>Sign Up</Nav.Link>
+            <Nav.Link eventKey={2} >
+              Login
+            </Nav.Link>
+          </Nav> */}
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
+  )
+}
+
+export default NavbarComp
+
+/*
     <div className='navbar'>
         <div className='title'>
             News App
@@ -24,8 +51,4 @@ const Navbar = () => {
                 <p>Login</p>
             </a>
         </div>
-    </div>
-  )
-}
-
-export default Navbar
+    </div>*/

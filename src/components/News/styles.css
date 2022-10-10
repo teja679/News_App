@@ -11,3 +11,8 @@
 .single-news .card-text {
 	height: 90px;
 }
+
+a {
+  color: inherit;
+  text-decoration: none; 
+}
