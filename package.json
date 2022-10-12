@@ -1,6 +1,7 @@
 {
   "name": "news_app",
   "version": "0.1.0",
+  "homepage": "https://teja679.github.io/News_App.git",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.10.4",
@@ -24,6 +25,8 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
