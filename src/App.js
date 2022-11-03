@@ -11,11 +11,11 @@ import SignUp from './components/Login/SignUp';
 
 function App() {
   const [newsList, setNewsList] = useState([])
-
+  const API_KEY = 'dd982a8bb9974e3bb39e4d3a46e7a238'
   useEffect(() => {
     const fetchNews = async () => {
       try {
-        let res = await axios.get('https://newsapi.org/v2/top-headlines?apiKey=6d36a43e2ab643af9f2a95f64b8bf2cc&country=in', {crossDomain: true})
+        let res = await axios.get(`https://newsapi.org/v2/top-headlines?apiKey=${API_KEY}&country=in`, {crossDomain: true})
         setNewsList(res.data.articles)
       }
       catch (err) {
