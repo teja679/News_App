@@ -7,7 +7,7 @@ import Contact from './components/Footer/Contact'
 import About from './components/Footer/About'
 import SingleNews from './components/Header/SingleNews';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-// import SignUp from './components/Login/SignUp';
+import SignUp from './components/Login/SignUp';
 
 function App() {
   const [newsList, setNewsList] = useState([])
@@ -32,7 +32,7 @@ function App() {
         <Route path="/news/:id" element={<SingleNews newsList={newsList} />} />
         <Route path='/about' element={<About />} />
         <Route path='/contact' element={<Contact />} />
-        {/* <Route path='/sign-up' element={<SignUp />} /> */}
+        <Route path='/sign-up' element={<SignUp />} />
       </Routes>
     </BrowserRouter>
   );

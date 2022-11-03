@@ -14,12 +14,12 @@ const NavbarComp = () => {
             <Nav.Link as={NavLink} to='/about'>About Us</Nav.Link>
 			      <Nav.Link as={NavLink} to='/contact'>Contact Us</Nav.Link>
           </Nav>
-          {/* <Nav>
+          <Nav>
             <Nav.Link as={NavLink} to='/sign-up'>Sign Up</Nav.Link>
             <Nav.Link eventKey={2} >
               Login
             </Nav.Link>
-          </Nav> */}
+          </Nav>
       </Container>
       <div className='menu-div'>
         <Drawer />
