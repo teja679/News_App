@@ -15,7 +15,7 @@ function App() {
   useEffect(() => {
     const fetchNews = async () => {
       try {
-        let res = await axios.get('https://newsapi.org/v2/top-headlines?apiKey=6d36a43e2ab643af9f2a95f64b8bf2cc&country=in')
+        let res = await axios.get('https://newsapi.org/v2/top-headlines?apiKey=6d36a43e2ab643af9f2a95f64b8bf2cc&country=in', {crossDomain: true})
         setNewsList(res.data.articles)
       }
       catch (err) {
