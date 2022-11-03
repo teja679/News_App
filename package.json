@@ -1,7 +1,7 @@
 {
+  "homepage": "https://teja679.github.io/News_App",
   "name": "news_app",
   "version": "0.1.0",
-  "homepage": "https://teja679.github.io/News_App.git",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.10.4",
@@ -47,5 +47,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^4.0.0"
   }
 }
